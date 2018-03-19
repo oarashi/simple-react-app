@@ -1,5 +1,27 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+@keyframes blink {
+    0% { box-shadow: 0 0 15px red; }
+    50% { box-shadow: 0 0 0; }
+    100% { box-shadow: 0 0 15px red; }
+}
+
+@-webkit-keyframes blink {
+    0% { box-shadow: 0 0 15px red; }
+    50% { box-shadow: 0 0 0; }
+    100% { box-shadow: 0 0 15px red; }
+}
+
+
+.tableError {
+    -webkit-animation: blink 1.0s linear infinite;
+    -moz-animation: blink 1.0s linear infinite;
+    -ms-animation: blink 1.0s linear infinite;
+    -o-animation: blink 1.0s linear infinite;
+    animation: blink 1.0s linear infinite;
 }
